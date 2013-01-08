@@ -9,6 +9,11 @@ this is selectable.
 This work is available under the "MIT License". Please see
 the file `COPYING` in this distribution for license terms.
 
+To build, you'll need `cabal-install`, my `parseargs`
+package from [Hackage](http://hackage.haskell.org), and a
+recent `ghc`. Then just say "cabal configure; cabal install"
+and you should be golden.
+
 The file `calgen.sh` in this repo is the Bourne-shell
 original that I used as a prototype for this Haskell
 version. It is neither as complete nor as robust, but it is
