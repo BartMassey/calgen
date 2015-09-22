@@ -58,5 +58,5 @@ executable calgen
   -- other-modules:       
   
   -- Other library packages from which modules are imported.
-  build-depends:       base ==4.5.*, parseargs ==0.1.*
+  build-depends:       base >=4 && <5, parseargs ==0.1.*
   
