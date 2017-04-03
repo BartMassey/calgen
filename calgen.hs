@@ -142,7 +142,7 @@ main = do
             (dfWeek df) (dfDay df) (yearName df)
         formatDay True df =
           let w = if dfWDay df == head dayNames 
-                  then printf "### *Week %d: *\n" (dfWeek df)
+                  then printf "### *Week %d:*\n" (dfWeek df)
                   else "" in
           printf "%s  * **%s %d %s:** *TBA*"
             w (dfWDay df) (dfDay df) (yearName df)
