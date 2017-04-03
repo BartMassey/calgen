@@ -141,8 +141,10 @@ main = do
           printf "<tr><td align=\"right\">%d</td><td align=\"right\">%d %s</td><td>TBA</td></tr>"
             (dfWeek df) (dfDay df) (yearName df)
         formatDay True df =
+          let wd = dfWeek df in
+          let b = if wd == 1 then "" else "\n" in
           let w = if dfWDay df == head dayNames 
-                  then printf "### *Week %d:*\n" (dfWeek df)
+                  then printf "%s### *Week %d:*\n" b wd
                   else "" in
           printf "%s  * **%s %d %s:** *TBA*"
             w (dfWDay df) (dfDay df) (yearName df)
